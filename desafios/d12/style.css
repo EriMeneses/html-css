@@ -27,6 +27,7 @@ header{
 header h1{
     font-family: var(--fontecordel);
     padding-top: 40px;
+    font-size: 9vw;
 }
 header p{
     font-size: 20px;
@@ -46,11 +47,15 @@ a:hover{
 
 section{
     font-family: var(--fontecordel);
-    font-size: 30px;
+    font-size: 3.5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+}
+
+section p{
+    padding-bottom: 2em;
 }
 
 section.normal{
@@ -59,13 +64,31 @@ section.normal{
 }
 
 section.imagem{
-    background-color: rgba(0, 0, 0, 0.637);
+    background-color: rgba(0, 0, 0, 0.466);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.541);
 }
 
 section.imagem > p{
-    background-color: rgba(0, 0, 0, 0.664);
-    width: 300px;
+    background-color: rgba(0, 0, 0, 0.801);
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 0px black;
+}
+
+section#i1{
+    background-image: url('./imagens/background001.jpg');
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section#i2{
+    background-image: url('./imagens/background002.jpg');
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 footer{
