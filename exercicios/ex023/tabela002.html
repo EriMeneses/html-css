@@ -12,13 +12,28 @@
         table{
             width: 600px;
             border-collapse: collapse;
+            position: relative;
         }
+
+
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
         th{
             text-align: left;
+        }
+
+        caption{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.3em;
+            font-weight: bold;
+            background-color: darkgray;
+            padding: 5px;
+        }
+
+        tbody>tr:nth-child(2n){
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -27,6 +42,7 @@
         Uso de tabelas grandes
     </h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
                 <th>Estado</th>
