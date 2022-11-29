@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 5</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc"><label for="imasc">Masculino</label>
+            <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Filmes que gosto</legend>
+            <form action="cadastro.php" method="get"></form>
+            <label for="itita">
+                <input type="checkbox" name="ftita" id="itita">Titanic <br></label>
+            <label for="ivel">
+                <input type="checkbox" name="fvel" id="ivel">Velozes e Furiosos <br></label>
+            <label for="iaven">
+                <input type="checkbox" name="faven" id="iaven">Avengers <br></label>
+            <label for="iiron">
+                <input type="checkbox" name="firon" id="iiron"> Iron Man <br></label>
+            <label for="iguard">
+                <input type="checkbox" name="fguard" id="iguard"> Guardiões da Galáxia <br></label>
+            <label for="icar">
+                <input type="checkbox" name="fcar" id="icar"> Carros</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        </form>
+</body>
+</html>
