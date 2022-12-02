@@ -7,7 +7,7 @@
     <title>Formulário 7</title>
 </head>
 <body>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post">
         <div>
             <label for="iest">Estado</label>
             <select name="estado" id="iest">
@@ -24,6 +24,21 @@
                 </optgroup>
             </select>
         </div>
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="profissao" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option value="prof">Professor</option>
+                <option value="mt">Motorista</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
